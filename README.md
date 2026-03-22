@@ -1,1 +1,1 @@
-# openclaw-telegram-bot
+# telegram-bot
