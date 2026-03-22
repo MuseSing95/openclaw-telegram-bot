@@ -1,12 +1,12 @@
 {
-  "name": "openclaw-telegram-bot",
+  "name": "telegram-bot",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "openclaw telegram"
+    "start": "node index.js"
   },
   "dependencies": {
-  "openclaw": "latest",
-  "@anthropic-ai/sdk": "latest"
+    "openclaw": "latest",
+    "node-fetch": "latest"
   }
 }
