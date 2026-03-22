@@ -6,6 +6,7 @@
     "start": "openclaw telegram"
   },
   "dependencies": {
-    "openclaw": "latest"
+  "openclaw": "latest",
+  "@anthropic-ai/sdk": "latest"
   }
 }
