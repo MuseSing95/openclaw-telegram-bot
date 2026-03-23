@@ -1,6 +1,12 @@
-console.log(">>> Bot code is running <<<");
+const { TelegramBot } = require("openclaw");
 
-// Keep it simple: just stay alive
-setInterval(() => {
-  console.log("Bot is alive at", new Date().toISOString());
-}, 10000);
+console.log(">>> Bot starting <<<");
+
+const bot = new TelegramBot(process.env.TELEGRAM_API_TOKEN);
+
+bot.on("message", (ctx) => {
+  console.log("Message received:", ctx.message.text);
+  ctx.reply("✅ Bot received: " + ctx.message.text);
+});
+
+bot.start();
